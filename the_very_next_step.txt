@@ -1,0 +1,17 @@
+
+1. data pipeline for "singlefile.csv" for a given year. this will be as detailed a file as we have. the absolute most granular. I'm thinking the argument should simply be a year. I intelligently build the web request from there to go pull the file (if I don't have it locally).
+
+The unique key is:
+# area_fips _ industry_code _ own_code _ year _ quarter
+
+The key to join across years should be 
+# area_fips _ industry_code _ own_code _ quarter
+(year is the only thing missing from here)
+
+
+I should be able to run my pipeline for 2016, then run my pipeline for 2017, and join the two together to see what the deltas are.
+
+
+
+
+
