@@ -1,5 +1,7 @@
 
-data/*
+
+cache/*
+proc_data/*
 
 
 # History files
@@ -38,3 +40,4 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+.Rproj.user
