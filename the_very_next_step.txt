@@ -1,17 +1,9 @@
 
-1. data pipeline for "singlefile.csv" for a given year. this will be as detailed a file as we have. the absolute most granular. I'm thinking the argument should simply be a year. I intelligently build the web request from there to go pull the file (if I don't have it locally).
+I just completed a pipeline for county / state shapefiles
 
-The unique key is:
-# area_fips _ industry_code _ own_code _ year _ quarter
+I want to now create a good pipeline (maybe function) to map 2012 NAICS industry codes to the new 2017 NAICS industry codes. The analysis will be off by quite a bit if this isn't done first.
 
-The key to join across years should be 
-# area_fips _ industry_code _ own_code _ quarter
-(year is the only thing missing from here)
-
-
-I should be able to run my pipeline for 2016, then run my pipeline for 2017, and join the two together to see what the deltas are.
-
-
+I created many NA values during the mapping between 2012 and 2017 codes.
 
 
 

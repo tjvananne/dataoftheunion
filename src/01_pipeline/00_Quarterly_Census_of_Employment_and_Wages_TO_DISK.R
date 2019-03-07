@@ -22,7 +22,7 @@
 # SCRIPT CONFIG ------
 
 
-YEAR <- 2014
+YEAR <- 2010
 
 
 ZIP_FILE_PATH <- paste0("cache/00_QCEW_", YEAR, ".zip")
