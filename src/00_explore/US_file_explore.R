@@ -4,10 +4,10 @@
 # this file up, I'm leaving the dirty code I used to explore and
 # understand these datasets
 
-
 library(rstudioapi)
 library(dplyr)
-library(data.table)  # just for the fread()
+library(data.table)  # just for the fread() 
+library(readr)
 library(openxlsx)
 
 
@@ -27,7 +27,8 @@ fread_char <- function(p_csv_path) {
 # Single File EXPLORE ------------------------------------------
 
 # going to check out this "singlefile.csv" file
-singlefile     <- fread_char("data/01_raw/2018_qtrly_singlefile/2018.q1-q1.singlefile.csv")
+# singlefile     <- fread_char("data/01_raw/2018_qtrly_singlefile/2018.q1-q4.singlefile.csv")
+singlefile     <- read_csv("data/01_raw/2018_qtrly_singlefile/2018.q1-q4.singlefile.csv")
 industry_codes <- read.csv("data/01_raw/industry_titles.csv", stringsAsFactors = F)
 singlefile     <- merge(x=singlefile, y=industry_codes, by="industry_code", all.x=T, all.y=F)
 
